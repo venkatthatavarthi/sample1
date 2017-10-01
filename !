@@ -1,0 +1,16 @@
+#!/bin/bash
+
+USERNAME="venkatthatavartht status"
+PASSWORD="Venkat_143"
+BRANCH="master"
+REMOTE_REPO="github.com/venkatthatavarth/hooktest.git"
+
+#git checkout master
+
+#git pull origin master
+#git checkout $BRANCH --quiet
+#git add .
+#git commit -m "sample"
+git push –set-upstream origin refs/heads/master
+git push -u https://$USERNAME:$PASSWORD@$BRANCH master  
+git status
